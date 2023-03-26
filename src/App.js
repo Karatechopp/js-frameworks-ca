@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Nav from "./components/layout/Nav";
+import Beerlist from "./components/BeerList";
+import LoginPage from "./components/login/LoginPage";
+import { AuthProvider } from "./context/AuthContext";
+import Admin from "./components/admin/Admin";
+import Beerdetail from "./components/BeerDetail";
+import Contact from "./components/Contact";
+import Favourites from "./components/Favourites";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthProvider>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route exact path="/" element={<Beerlist />} />
+            <Route exact path="/login" element={<LoginPage />} />
+            <Route exact path="/admin" element={<Admin />} />
+            <Route path="/detail/:id" element={<Beerdetail />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/favourites" element={<Favourites />} />
+          </Routes>
+        </Router>
+      </AuthProvider>
+    </>
   );
 }
 

@@ -1,0 +1,38 @@
+.contact-form {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgb(224, 224, 224);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-form button {
+  background-color: rgb(40, 214, 40);
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-form button:active {
+  border-style: inset;
+}
+
+.contact-form input,label {
+  display: block;
+  min-width: 300px;
+}
+
+.contact-form input,textarea,select,option {
+  padding: 10px;
+}
+
+.contact-form input,select {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
