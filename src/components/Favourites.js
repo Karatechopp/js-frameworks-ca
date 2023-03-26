@@ -2,6 +2,10 @@ import Beeritem from "./BeerItem";
 import Heading from "./layout/Heading";
 
 function Favourites() {
+  if (localStorage.getItem("favorites" !== null || "[]")) {
+    localStorage.setItem("favorites", JSON.stringify([]));
+  }
+
   const favourites = JSON.parse(localStorage.getItem("favorites"));
 
   return (

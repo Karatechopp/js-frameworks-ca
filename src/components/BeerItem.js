@@ -10,6 +10,8 @@ function Beeritem({ id, name, price }) {
     const savedFavorites = localStorage.getItem("favorites");
     if (savedFavorites) {
       setFavorites(JSON.parse(savedFavorites));
+    } else {
+      localStorage.setItem("favorites", JSON.stringify([]));
     }
   }, []);
 
