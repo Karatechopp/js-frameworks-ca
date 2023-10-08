@@ -18,7 +18,7 @@ A site connecting to a beer api displaying all items, allowing you to add them i
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Karatechopp/js-frameworks-ca/.git 
+git clone git@github.com:Karatechopp/js-frameworks-ca.git 
 ```
 
 2. Install the dependencies:
