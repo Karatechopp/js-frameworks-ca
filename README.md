@@ -1,17 +1,15 @@
-# Noroff social
+# Javascript frameworks
+![image](https://i.imgur.com/E7xz6Xd.jpg)
 
-![image](https://i.imgur.com/gYjLL4v.jpg)
-
-A project made in school with react and tailwind ment to be able to use CRUD operations and display results from api
+A project made in school with react logging in with jwt token from my own wordpress. An admin panel, and using hook to check auth every page load.
 
 ## Description
 
-A social media page with user registration, login, posts, comments, profiles.
+A site connecting to a beer api displaying all items, allowing you to add them in and out of favourites, displaying favourites, seeing details of the items you clicked on. A contact form in react hook form.
 
 ## Built With
 
 - [React.js](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com)
 
 ## Getting Started
 
@@ -20,7 +18,7 @@ A social media page with user registration, login, posts, comments, profiles.
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Karatechopp/noroff-social.git 
+git clone git@github.com:Karatechopp/js-frameworks-ca/.git 
 ```
 
 2. Install the dependencies:
